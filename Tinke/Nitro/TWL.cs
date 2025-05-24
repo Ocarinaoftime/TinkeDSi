@@ -187,7 +187,7 @@ namespace Tinke.Nitro
         {
             if (hmac == null) hmac = new HMACSHA1(hmac_sha1_key);
             byte[][] hashes = new byte[ov9.Count][];
-            bool changed = false;
+            bool changed = true;
             for (int i = 0; i < ov9.Count; i++)
             {
                 Stream str = File.OpenRead(ov9[i].path);
